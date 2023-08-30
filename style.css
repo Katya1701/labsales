@@ -1,0 +1,572 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.click {
+    color: #31BEF4;
+}
+
+/*Container*/
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 15px 150px;
+    margin: 0 auto;
+}
+
+/*============= Header =================*/
+
+.header {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to top, transparent, #fff);
+}
+
+.header-nav {
+    display: contents;
+}
+
+.header-inner {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__link,
+.header_under-the-cap__link {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: #212D55;
+    line-height: 21px;
+}
+
+.header-nav__link:hover,
+.header_under-the-cap__link:hover {
+    color: #31BEF4;
+    transition: .1s linear;
+}
+
+.header-nav__link-call {
+    display: flex;
+    margin-top: 8px;
+    text-decoration: underline;
+}
+
+.active-link {
+    color: #31BEF4;
+}
+
+.header-phone_number {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    color: #212D55;
+}
+
+.header_under-the-cap {
+    display: flex;
+    height: 81px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*============= intro ===========*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 811px;
+    position: relative;
+
+    background: url("../labsales/img/background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.intro-header,
+.intro-address,
+.intro-sum {
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #212D55;
+}
+
+.intro-header {
+    margin-top: 140px;
+}
+
+.intro-address {
+    margin-top: 37px;
+    font-size: 32px;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.intro-sum {
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.intro-button,
+.form-filling__button {
+    margin-top: 26px;
+    cursor: pointer;
+    background: rgba(49, 190, 244, 1);
+    border: none;
+    border-radius: 10px;
+    width: 325px;
+    height: 56px;
+    font-size: 22px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0px 6px 0px 0px rgba(44, 171, 220, 1);
+}
+
+.intro-price_info_card {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.price_info_card__background-first {
+    background-color: #F9FCFD;
+    width: 221px;
+    height: 132px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px 0px rgba(33, 45, 85, 0.1);
+}
+
+.price_info_card__background-two {
+    background-color: #fff;
+    width: 190.31px;
+    height: 100.9px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 5px 19px 0px rgba(33, 45, 85, 0.06);
+}
+
+.price_info_card__ellipse {
+    display: flex;
+    align-items: center;
+    margin-left: -11px;
+    cursor: pointer;
+}
+
+.price_info_card__ellipse-grey {
+    background: #F9FCFD;
+    width: 23.87px;
+    height: 20.92px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -3px 0px 5px 0px rgba(33, 45, 85, 0.06);
+}
+
+.price_info_card__ellipse-blue,
+.price_info_card__ellipse-white {
+    width: 10px;
+    height: 10px;
+    background: #31BEF4;
+    border-radius: 50%;
+}
+
+.price_info_card__ellipse-white {
+    background: #fff;
+}
+
+.price_info_card__text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.price_info_card__text,
+.advantages_card__text,
+.map-text,
+.slider-text {
+    font-family: 'Gilroy', sans-serif;
+    color: #212D55;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/*========== advantages ========= */
+
+.advantages {
+    height: 308px;
+    display: flex;
+    margin-top: 130px;
+}
+
+.advantages_card__position {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.advantages_card__backgroud {
+    display: flex;
+    align-items: center;
+    width: 262px;
+    height: 139px;
+    border-radius: 10px;
+    background: rgba(249, 252, 253, 1);
+    box-shadow: 0px 5px 15px 0px rgba(33, 45, 85, 0.2);
+}
+
+.advantages_card__img {
+    width: 110px;
+    height: 120px;
+    margin-left: -3px;
+    margin-right: -4px;
+}
+
+.advantages_card__text {
+    line-height: 35px;
+}
+
+/*==============map==========*/
+
+.map {
+    margin-top: 130px;
+}
+
+.map-header {
+    font-family: 'Gilroy', sans-serif;
+    color: #212D55;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.map-container {
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.map-infrastructure {
+    width: 100%;
+}
+
+.map-block-card {
+    position: absolute;
+    margin: 60px 170px 60px 0px;
+    gap: 15px;
+    display: grid;
+}
+
+.map-background__first,
+.slider-background__first {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 319px;
+    height: 102px;
+    border-radius: 10px;
+    background: rgba(249, 252, 253, 1);
+    box-shadow: 0px 5px 15px 0px rgba(33, 45, 85, 0.2);
+}
+
+.map-background__first:hover {
+    color: #31BEF4;
+}
+
+.map-background__two,
+.slider-background__two {
+    display: flex;
+    align-items: center;
+    width: 287px;
+    height: 72px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 19px 0px rgba(33, 45, 85, 0.06);
+}
+
+.map-ellipse,
+.slider-ellipse {
+    margin-left: -11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19.6px;
+    height: 18px;
+    border-radius: 50%;
+    background: #F9FCFD;
+    box-shadow: inset -3px 0px 5px 0px rgba(33, 45, 85, 0.06);
+}
+
+.map-text,
+.slider-text {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*============slider==========*/
+
+.slider {
+    margin-top: 100px;
+}
+
+.slider-header,
+.form-header {
+    font-family: 'Gilroy', sans-serif;
+    color: #212D55;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.slider-subtitle {
+    font-weight: 500;
+    font-size: 22px;
+    color: rgba(101, 109, 137, 1);
+    font-family: 'Gilroy', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.slider-block-card {
+    display: flex;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.slider-background__first {
+    width: 193px;
+    height: 102px;
+}
+
+.slider-background__two {
+    width: 163.84px;
+    height: 72px;
+}
+
+.slider-text {
+    padding-left: 10px;
+}
+
+.slider-description {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-description__block-first {
+    display: contents;
+}
+
+.slider-description__block-two {
+    display: grid;
+    gap: 27px;
+}
+
+.slider-description__background {
+    width: 538px;
+    height: 378.25px;
+    padding: 30px 20px 0 20px;
+    margin: 140px 0 0 40px;
+    position: absolute;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 5px 19px 0px rgba(33, 45, 85, 0.06);
+}
+
+.slider-description__title {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: rgba(33, 45, 85, 1);
+    font-family: 'Gilroy', sans-serif;
+}
+
+.slider-description__text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Gilroy', sans-serif;
+    color: rgba(101, 109, 137, 1);
+    line-height: 18.56px;
+}
+
+/*===========form==========*/
+
+.form-background {
+    margin-top: 50px;
+    width: 100%;
+    height: 552px;
+    border-radius: 10px 10px 0px 0px;
+    background: rgba(249, 252, 253, 1);
+    box-shadow: 0px 5px 15px 0px rgba(33, 45, 85, 0.2);
+}
+
+.form-header {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.form-block {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.form-call {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.form-call__text {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    color: rgba(33, 45, 85, 1);
+    font-family: 'Gilroy', sans-serif;
+}
+
+.form-call__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-text {
+    font-size: 16px;
+    margin-left: 15px;
+    width: 11%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: rgba(33, 45, 85, 1);
+    font-family: 'Gilroy', sans-serif;
+}
+
+.form-filling {
+    width: 50%;
+    margin-left: auto;
+}
+
+.form-filling__now {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    color: rgba(49, 190, 244, 1);
+    font-family: 'Gilroy', sans-serif;
+}
+
+.form-filling__block {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px;
+}
+
+.form-filling__input {
+    font-family: 'Gilroy', sans-serif;
+    border: none;
+    font-size: 18px;
+    color: rgba(168, 171, 183, 1);
+    font-weight: 500;
+    padding-left: 15px;
+    outline: none;
+}
+
+.form-ellipse {
+    display: flex;
+    margin-left: -10px;
+    align-items: center;
+    justify-content: center;
+    width: 19.6px;
+    height: 18px;
+    border-radius: 50%;
+    background: #F9FCFD;
+    box-shadow: inset -3px 0px 5px 0px rgba(33, 45, 85, 0.06);
+}
+
+.form-filling__background {
+    display: flex;
+    align-items: center;
+    width: 249px;
+    height: 71px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 19px 0px rgba(33, 45, 85, 0.06);
+}
+
+.form-filling__button {
+    width: 241px;
+    height: 56px;
+    margin-top: 0;
+} 
+
+.form-checkbox-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-checkbox__input {
+    display: none;
+}
+
+.form-checkbox-block label::before {
+    content: "";
+    background: url(../labsales/img/checkbox/no-active.svg) no-repeat;
+    width: 50px;
+	height: 43px;
+    display: inline-block;
+    position: relative;
+}
+
+.form-checkbox-block input[type=checkbox]:checked + label::before {
+    background: url(../labsales/img/checkbox/active.svg) no-repeat;
+    background-clip: content-box;
+}
+
+.form-checkbox-block {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 14px;
+    color: rgba(33, 45, 85, 1);
+}
+
+.form-checkbox__text-color_blue {
+    color: rgba(49, 190, 244, 1);
+}
+
+.form-checkbox__text {
+    display: flex;
+    align-items: center;
+}
+
